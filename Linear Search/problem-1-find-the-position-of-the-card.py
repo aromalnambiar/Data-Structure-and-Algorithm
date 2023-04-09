@@ -8,7 +8,7 @@ def card_game(cards, query):
     print("query : ", query)
     
     # Set up a loop for repetition
-    while True:
+    while position < len(cards):
         
         #print the position
         print("position : ", position)
@@ -26,7 +26,7 @@ def card_game(cards, query):
         if position == len(cards):
             # Number not found, return -1
             return -1
-        
+    return -1    
 
 #funtion calling
 card_game([13, 11, 10, 7, 4, 3, 2, 1, 0], 7)
